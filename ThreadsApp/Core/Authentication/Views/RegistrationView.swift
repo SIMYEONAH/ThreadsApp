@@ -49,6 +49,36 @@ struct RegistrationView: View {
                     .cornerRadius(10)
                     .padding(.horizontal, 24)
             }
+            Button {
+                
+            } label: {
+                Text("Sign Up")
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.white)
+                    .frame(width: 352, height: 44)
+                    .background(.black)
+                    .cornerRadius(8)
+            }
+            .padding(.vertical)
+            
+            Spacer()
+            
+            Divider()
+            
+            Button {
+                
+            } label: {
+                HStack(spacing: 3) {
+                    Text("Already have an account?")
+                    
+                    Text("Sign In")
+                        .fontWeight(.semibold)
+                }
+                .foregroundColor(.black)
+                .font(.footnote)
+            }
+            .padding(.vertical, 16)
         }
     }
 }
