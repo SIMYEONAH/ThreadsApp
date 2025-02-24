@@ -49,6 +49,7 @@ struct TreadsTabView: View {
                 .onAppear { selectedTab = 4 }
                 .tag(4)
         }
+        .tint(.black)
     }
 }
 
