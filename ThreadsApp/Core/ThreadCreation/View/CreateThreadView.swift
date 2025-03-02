@@ -54,6 +54,8 @@ struct CreateThreadView: View {
                     Button("Post") {
                         
                     }
+                    .opacity(caption.isEmpty ? 0.5 : 1.0)
+                    .disabled(caption.isEmpty)
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .foregroundColor(.black)
